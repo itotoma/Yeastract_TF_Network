@@ -1,4 +1,4 @@
-setwd("/Users/itoutouma/Lab_Analysis/")
+setwd("/Lab_Analysis/")
 
 library(readr)
 library(tm)
@@ -16,7 +16,7 @@ validate <- function(DF){
 
 ### Build TF network object
 
-GRNDATADir.PATH <- "/Users/itoutouma/Lab_Analysis/GRN"
+GRNDATADir.PATH <- "/Lab_Analysis/GRN"
 source("./GRN/YeastractGRN.R")
 
 YRGRNDegDF = degree(tbl_YRGRNBoth, mode= "all") %>% cbind(degree(tbl_YRGRNBoth, mode= "in")) %>% 
