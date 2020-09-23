@@ -36,3 +36,22 @@ Yeastract <http://www.yeastract.com/> のRegulation matrixからダウンロー�
 > -   DNA binding plus expression evidence
 > -   Unstressed group condition
 > -   Consider User inserted TF list
+
+
+
+より厳しい(確実な)条件でフィルターしたデータ
+RegulationTwoColumnTable_both_strict.tsv
+
+> -   Documented
+> -   TF acting as represser
+> -   DNA binding and expression evidence
+> -   Unstressed group condition
+> -   Consider User inserted TF list 
+
+
+Gene -> ORF の変換に関して
+
+下記コマンドでカンマを除きコピーした後
+cut -d ',' -f 2 ./YRGRNlist.csv  | sed -e 's/"//g' | pbcopy
+
+yeastract に突っ込む
