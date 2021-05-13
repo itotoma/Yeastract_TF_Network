@@ -54,4 +54,9 @@ Gene -> ORF の変換に関して
 下記コマンドでカンマを除きコピーした後
 cut -d ',' -f 2 ./YRGRNlist.csv  | sed -e 's/"//g' | pbcopy
 
+
+
+Update 2021 5/13
+cat YeastTFConsensus.csv | sed -n '1,401p' | cut -d ',' -f 1 | uniq | pbcopy
+
 yeastract に突っ込む
